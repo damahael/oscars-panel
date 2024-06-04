@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Futura, Calibri, "Trebuchet MS", sans-serif;
+}
+
+@font-face {
+  font-family: Futura;
+  src: url(./FUTURA55REGULAR.TTF);
+}
+
+body {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.content {
+  padding: 32px;
+  background-color: black;
+  border-radius: 12px;
+  margin: 6px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 100vh;
+}
+
+.title {
+  margin-bottom: 6px;
+  margin: 0 auto;
+  font-size: 3rem;
+  height: 150px;
+  display: flex;
+  gap: 12px;
+}
+
+.title img {
+  max-height: 100%;
+}
+
+.list-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 120px);
+  gap: 12px;
+  align-items: center;
+}
+
+.list h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  border-radius: 12px;
+}
+
+.card div {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.card div:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.oppenheimer {
+  grid-row: 2 / 4;
+  grid-column: 2 / 5;
+}
+
+.anatomy {
+  grid-row: 1 / 3;
+}
+
+.killers {
+  grid-row: 3 / 5;
+}
+
+.maestro {
+  grid-row: 1 / 3;
+}
+
+.past-lives {
+  grid-row: 3 / -1;
+}
+
+.poor-things {
+  grid-column: 2 / 3;
+}
+
+.winner-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.winner-title p:first-child {
+  font-size: 2rem;
+  color: yellow;
+}
+
+.up {
+  display: grid;
+  grid-column: 2 / 5;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  height: 100%;
+}
+
+.zone img {
+  object-position: 50% 70%;
+}
+
+.barbie img {
+  object-position: 50% 30%;
+}
