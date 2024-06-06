@@ -125,6 +125,11 @@ body {
   color: yellow;
 }
 
+.winner-title:hover,
+.card div:hover {
+  opacity: 0;
+}
+
 .up {
   display: grid;
   grid-column: 2 / 5;
@@ -142,59 +147,44 @@ body {
 }
 
 .directors-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 120px 120px;
-    gap: 6px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 120px 120px;
+  gap: 6px;
 }
 
 .nolan {
-    grid-row: 1 / 3;
+  grid-row: 1 / 3;
 }
 
 .lead-acting,
-.supporting {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+.supporting,
+.screenplay {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
 }
 
-.best-actor-grid {
+.left-grid .card:first-child {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.left-grid {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 110px 110px 110px;
   gap: 6px;
 }
 
-.winner-title:hover,
-.card div:hover {
-  opacity: 0;
+.right-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 110px 110px 110px;
+  gap: 6px;
 }
 
-.murphy {
-  grid-column: 1;
-  grid-row: 1 / 3;
-}
-
-.best-actress-grid {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: 110px 110px 110px;
-    gap: 6px;
-}
-
-.stone {
-    grid-row: 1 / 3;
-    grid-column: 2;
-}
-
-.rdj {
-  grid-column: 1;
-  grid-row: 1 / 3;  
-}
-
-.randolph {
+.right-grid .card:first-child {
   grid-row: 1 / 3;
   grid-column: 2;
 }
-
