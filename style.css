@@ -86,12 +86,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 12px;
   transition: 0.3s;
 }
 
-.card div:hover {
-  background-color: rgba(0, 0, 0, 0);
+.work {
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 .oppenheimer {
@@ -119,7 +121,8 @@ body {
   grid-column: 2 / 3;
 }
 
-.winner-title {
+.winner-title,
+.card {
   display: flex;
   flex-direction: column;
 }
@@ -218,6 +221,7 @@ li {
   font-weight: 300;
   font-family: Lato, Futura, sans-serif;
   text-shadow: 1px 1px 30px black;
+  cursor: pointer;
 }
 
 .sidebar {
